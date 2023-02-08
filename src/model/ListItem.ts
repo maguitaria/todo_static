@@ -22,10 +22,10 @@ export default class ListItem implements Item { // create a model for list item
    set item(item: string) {
       this._item = item
    }
-   get checked(): boolean {
+   get checked(): boolean { // get the property from object
       return this._checked
    }
    set checked(checked: boolean) {
-      this._checked = checked // get the property from object
+      this._checked = checked 
    }
 }

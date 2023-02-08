@@ -1,4 +1,4 @@
-import ListItem from './ListItem'
+import ListItem from './ListItem' // bring the code from public code into this file
 
 interface List {
     list: ListItem[],
@@ -9,7 +9,7 @@ interface List {
     removeItem(id: string): void // remove item from the list
 }
 
-export default class FullList implements List {
+export default class FullList implements List { // make class as default so that we don`t use crly braces during import
     static instance: FullList = new FullList(); // static field for class - can`t be accessed outside the class
     private constructor(
         private _list: ListItem[] = [], // private means that it can`t be used outside class
