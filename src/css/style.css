@@ -214,7 +214,7 @@ section {
 
 
 .item>input[type="checkbox"]:checked+label {
-  text-decoration: line-through;
+text-decoration: line-through;
 }
 
 .item>label {
