@@ -2,13 +2,13 @@ import './css/style.css'
 import FullList from './model/FullList';
 import ListItem from './model/ListItem';
 import ListTemplate from './templates/ListTemplate';
-const itemEntryForm = document.getElementById('itemEntryForm') as
-    HTMLFormElement;
+
 const initApp = (): void => {
     const fullList = FullList.instance;
     const template = ListTemplate.instance;
     // put a listener event for the intances
-
+    const itemEntryForm = document.getElementById('itemEntryForm') as
+        HTMLFormElement;
     // function when the item is submitted to a form
     itemEntryForm.addEventListener('submit', (event: SubmitEvent): void => {
         event.preventDefault(); // to prevent submission of wrong data
