@@ -13,18 +13,22 @@ const initApp = (): void => {
     itemEntryForm.addEventListener('submit', (event: SubmitEvent): void => {
         event.preventDefault(); // to prevent submission of wrong data
 
-
-
         const input = document.getElementById('newItem') as HTMLInputElement;
         const newEntryText: string = input.value.trim(); // input of text
         if (!newEntryText.length) return  // not add empty items to list
-
+     // reset form after input
+        var resetForm: HTMLFormElement;
+            resetForm = <HTMLFormElement>document.getElementById('itemEntryForm');
+        if (resetForm)
+            resetForm.reset();
         // calculate the item id
         // grab the last item in the list and add +1 = will be the id of added item
         const itemId: number = fullList.list.length
             ? parseInt(fullList.list[fullList.list.length - 1].id) + 1 // if the number exists, convert string into number and -1 ( length returns one index more) (+1 to avoid array row)
             : 1                                                       // else state as 1 ( if no previous items added)
-        const newItem = new ListItem(itemId.toString(), newEntryText);
+        
+        
+            const newItem = new ListItem(itemId.toString(), newEntryText);
         // add item to the list
         fullList.addItem(newItem);
         template.render(fullList);
