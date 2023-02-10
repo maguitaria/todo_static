@@ -6,4 +6,5 @@ Using Typescript basics, Vite tool and HTML, CSS.
 2. Run **npm run dev**
 3. Enjoy! :wink:
 
-[Uploading Screenshot 2023-02-10 at 13.12.26.png…]()
+
+<img width="1440" alt="Screenshot 2023-02-10 at 13 14 19" src="https://user-images.githubusercontent.com/112544437/218078796-2285ebf4-510a-44cb-bfbf-b5f94f7c384f.png">
