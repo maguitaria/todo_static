@@ -1,6 +1,8 @@
 # To Do List
 This project is simple to-do list app for adding, editing, deleting tasks.
 Using Typescript basics, Vite tool and HTML, CSS.
+
+ [View deployment](https://maguitaria.github.io/typescript_toDo_list/?)
 # Installation
 1. Clone the repo https://github.com/maguitaria/typescript_toDo_list.git
 2. Run **npm run dev**
